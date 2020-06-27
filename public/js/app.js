@@ -49913,7 +49913,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var lat = document.querySelector("#lat").value === '' ? 20.620603 : document.querySelector("#lat").value;
     var lng = document.querySelector("#lng").value === '' ? -103.305492 : document.querySelector("#lng").value;
     var mapa = L.map('mapa').setView([lat, lng], 16);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(mapa);
     var geocodeService = L.esri.Geocoding.geocodeService();
